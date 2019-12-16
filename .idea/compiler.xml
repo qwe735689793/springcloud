@@ -6,12 +6,14 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="springcloudproviderdept8001" />
+        <module name="springcloudproviderdept8003" />
+        <module name="springcloudproviderdept8002" />
+        <module name="springcloud-api" />
         <module name="springcloudeureka7003" />
         <module name="springcloudconsumerdept80" />
         <module name="springcloud-consumer-dept-80" />
         <module name="springcloudapi" />
-        <module name="springcloud-api" />
+        <module name="springcloudproviderdept8001" />
         <module name="springcloudeuruka7001" />
         <module name="springcloudeureka7002" />
         <module name="springcloud-provider-dept-8001" />

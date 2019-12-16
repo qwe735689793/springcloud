@@ -16,7 +16,9 @@ public class DeptConsumerController {
     @Autowired
     private RestTemplate restTemplate;      //提供多种便捷访问的http服务的方法， 简单的Rest服务模板
     //http://localhost:8001/api/findAllDept
-    private static final String REST_URL_PREFIX = "http://localhost:8001";
+//    private static final String REST_URL_PREFIX = "http://localhost:8001";
+    //配置服务地址，实现负载均衡
+    private static final String REST_URL_PREFIX = "http://SPRINGCLOU-PROVIDER-DEPT";
 
     @RequestMapping("/Consumer/dept/add")
     public boolean add(Dept dept){
