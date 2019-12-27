@@ -21,8 +21,7 @@ eureka:
     service-url: #监控页面
       defaultZone: http://eureka7001.com:7001/eureka/,http://eureka7002.com:7002/eureka/,http://eureka7003.com:7003/eureka/
   instance:
-    instance-id: springcloud-Procider-dept8001
-    prefer-ip-address: false
+    instance-id: springcloud-Procider-hystrix-dept8001 #Eureka客户端上的名称
 
 info:
   app:name: MHj-springclou

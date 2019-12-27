@@ -9,10 +9,16 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>springcloud-provider-dept-8001</artifactId>
+    <artifactId>springcloud-provider-dept-hystrix-8001</artifactId>
+    <!--
+    服务熔断:服务端某个服务超时或者异常， 引起熔断，类似与保险丝
 
+·   服务降级:客户端从整体网站请求负载考您，当某个服务熔断或者 关闭之后，服务将不再被调
+        此时在客户端，我们可以准备一. 个FallbackFactory, 返回一- 个默认的值(缺省值)，
+        整体的服务水平下降不但是，好歹能~比直按挂掉强|
+    -->
     <dependencies>
-        <!--hystrix依赖-->
+        <!--hystrix熔断-->
         <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-hystrix</artifactId>
@@ -77,5 +83,4 @@
             <artifactId>spring-boot-devtools</artifactId>
         </dependency>
     </dependencies>
-
 </project>

@@ -1,8 +1,7 @@
-package springcloud.controller;
+package com.springcloud.controller;
 
 import com.springcloud.pojo.Dept;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -33,5 +32,10 @@ public class DeptConsumerController {
     @RequestMapping("/Consumer/dept/findAllDept")
     public List<Dept> findAllDept(){
         return restTemplate.getForObject(REST_URL_PREFIX+"/api/findAllDept",List .class);
+    }
+
+    @RequestMapping("/test")
+    public String findAllDept1(){
+        return "1";
     }
 }

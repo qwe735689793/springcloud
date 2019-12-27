@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 import java.util.List;
-@FeignClient(value = "SPRINGCLOU-PROVIDER-DEPT",path="/test")
+@FeignClient(value = "SPRINGCLOU-PROVIDER-DEPT",fallbackFactory=DeptClienSericeFallbackFactory.class)
 @Component
 public interface DeptClienSerice {
     @RequestMapping("/api/Consumer/dept/add")

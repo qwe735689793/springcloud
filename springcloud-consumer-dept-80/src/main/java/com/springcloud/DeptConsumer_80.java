@@ -1,14 +1,10 @@
-package springcloud;
+package com.springcloud;
 
-import com.springcloud.pojo.Dept;
 import mhjRule.mhjRule;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
 import org.springframework.cloud.netflix.ribbon.RibbonClient;
-
-import javax.naming.Name;
-import java.rmi.Naming;
 
 @SpringBootApplication
 @EnableEurekaClient
