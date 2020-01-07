@@ -1,0 +1,19 @@
+server:
+  port: 9527
+spring:
+  application:
+    name: springcloud-zuul
+eureka: #将网关注册到eureka中
+  client:
+    service-url:
+      defaultZone: http://eureka7001.com:7001/eureka/,http://eureka7002.com:7002/eureka/,http://eureka7003.com:7003/eureka/
+  instance:
+    instance-id: springclou-zuul9527
+    prefer-ip-address: true #显示ip
+zuul:
+  routes:
+    mydept.serviceId: springclou-provider-dept  #给这个服务取别名
+    mydept.path: /mydept/**
+  ignored-services: springclou-provider-dept
+  #不能使用该路径访问，即 关闭原路径，使用别名进行访问 “*”通配符*  隐藏所有真实服务名
+  prefix: /MHJ  #公共的访问前缀，加在服务名前面

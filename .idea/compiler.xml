@@ -7,19 +7,24 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="springcloudeureka7002" />
+        <module name="springcloudconfigserver3344" />
+        <module name="springcloudproviderconfigdept8001" />
         <module name="springcloudproviderdept8003" />
         <module name="springcloudproviderdept8002" />
         <module name="springcloudproviderdept8001" />
         <module name="springcloudproviderdepthystrix8001" />
         <module name="springcloudapi" />
+        <module name="springcloudeureka7003" />
         <module name="springcloudconsumerhystrixdashboard" />
         <module name="springcloud-api" />
         <module name="springcloudeuruka7001" />
         <module name="springcloudconsumerdept80" />
+        <module name="springcloudconfigeureka7001" />
         <module name="springcloud-consumer-dept-80" />
+        <module name="springcloudconfigclient3355" />
         <module name="springcloudconsumerdeptfeign80" />
         <module name="springcloud-provider-dept-8001" />
-        <module name="springcloudeureka7003" />
+        <module name="springcloudzuul9527" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>

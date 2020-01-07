@@ -1,0 +1,9 @@
+#系统级别的配置
+#以下几个配置组合在一起就是 服务端访问的方法   http://localhost:3344/master/application-test.yml
+spring:
+  cloud:
+    config:
+      name: config-server # 需要从git上读取的资源名称  不需要加后缀
+      uri: http://localhost:3344   # 服务端地址
+      label: master #分支名
+      profile: test  #从哪里拿

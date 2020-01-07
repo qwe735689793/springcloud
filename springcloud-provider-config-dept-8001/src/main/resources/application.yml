@@ -1,0 +1,3 @@
+spring:
+  application:
+    name: springcloud-provider-config-detp-8001

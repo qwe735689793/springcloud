@@ -1,0 +1,11 @@
+server:
+  port: 3344
+spring:
+  application:
+    name: springcloud-config-server
+  cloud:      #git上的地址  https 连接    注意是uri
+    config:
+      server:
+        git:
+          uri: https://gitee.com/tugeniupi/springcloud-config.git
+#通过congfig-server连接到git，访问其中的配置
